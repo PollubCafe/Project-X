@@ -26,7 +26,7 @@
       'moment': 'js/lib/moment.js',
       'jquery': 'js/lib/jquery.js',
       'symbol-observable': 'js/lib/symbol-observable',
-      'ng2-bootstrap/ng2-bootstrap': 'js/lib/ng2-bootstrap.umd.js'
+      'ng2-bootstrap/ng2-bootstrap': 'js/lib/ngx-bootstrap.umd.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {

@@ -9,21 +9,23 @@
     - set `PYTHON` environment variable
     - `$ gradle npminstall` may complain otherwise
 
+## First
+* Robimy clona repo
 
 ## build & run
 
-* `$ gradle build bootRun`
+* `$ gradle build`
+* `Run as SpringBoot App`
 * using browser, navigate to`localhost:8080`
 
-## instrukcja dla opornych... takich jak ja :) 
-* Robimy clona repo
-* Klepiemy w konsoli: gradle build
-* Sciągamy folder bundles i podmieniamay go.
+## FrontEnd watcher
 
-   Lokalizacja folderu: src/main/java/web/node_modules/ng2-bootstrap/
-* Znowu klepiemy w konsoli: gradle build
-* klikamy prawym na klase Application i klikamy "run Applicatiion"
- 
+* `$ gradle gulp_watch`
+
+### Refresh FrontEnd, witchout SpringBoot restart
+
+* `$ gradle gulp_build`
+
  Koniec ;) 
 
  
