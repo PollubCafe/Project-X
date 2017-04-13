@@ -1,0 +1,50 @@
+{
+  "name": "spring-boot-angular2",
+  "description": "Spring Boot with Angular2, Typescript, Sass, and a Gulp Build",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.1",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.4.1",
+    "@angular/forms": "^2.4.1",
+    "@angular/http": "^2.4.1",
+    "@angular/platform-browser": "^2.4.1",
+    "@angular/platform-browser-dynamic": "^2.4.1",
+    "@angular/router": "^3.4.1",
+    "@angular/upgrade": "^2.4.1",
+    "angular2-in-memory-web-api": "0.0.21",
+    "bootstrap": "^4.0.0-alpha.5",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "moment": "^2.17.1",
+    "ng2-bootstrap": "^1.1.16",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.0.2",
+    "symbol-observable": "^1.0.4",
+    "systemjs": "^0.19.41",
+    "tether": "^1.4.0",
+    "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.35",
+    "@types/jquery": "^2.0.33",
+    "concurrently": "^3.1.0",
+    "del": "2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-typescript": "3.0.2",
+    "jasmine-core": "2.5.2",
+    "lite-server": "^2.2.2",
+    "typescript": "2.0.3"
+  }
+}
