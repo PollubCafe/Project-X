@@ -1,6 +1,7 @@
-package org.projectX.user.model;
+package org.projectX.event.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.projectX.user.model.UserAccount;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
