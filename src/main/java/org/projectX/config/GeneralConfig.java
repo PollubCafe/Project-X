@@ -1,5 +1,6 @@
 package org.projectX.config;
 
+import org.projectX.event.model.Event;
 import org.projectX.user.model.UserAccount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
