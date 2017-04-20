@@ -3,10 +3,7 @@ package org.projectX.event.model;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.projectX.user.model.UserAccount;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
@@ -35,6 +32,7 @@ public class Event {
     @NotNull
     private Date createAt;
 
+    @ManyToOne(targetEntity=UserAccount.class, fetch=FetchType.EAGER)
     @NotNull
     private UserAccount author;
 

@@ -18,12 +18,14 @@ public class GeneralConfig {
     DataSource dataSource;
 
     @Bean(name = "sessionFactory")
-    public LocalSessionFactoryBean hibernate5SessionFactoryBean(){
+    public LocalSessionFactoryBean hibernate5SessionFactoryBean() {
         LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
         localSessionFactoryBean.setDataSource(dataSource);
         localSessionFactoryBean.setAnnotatedClasses(
-               UserAccount.class
+                UserAccount.class
+
         );
+
 
         /** Porperties dla mysql. Wszystekie są zawarte w application.properties ale niech narazie bd bo nie wiem czy
          * na pewno są wszystkie
