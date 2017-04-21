@@ -1,5 +1,6 @@
 package org.projectX.config;
 
+import org.projectX.event.model.Event;
 import org.projectX.user.model.UserAccount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -17,12 +18,14 @@ public class GeneralConfig {
     DataSource dataSource;
 
     @Bean(name = "sessionFactory")
-    public LocalSessionFactoryBean hibernate5SessionFactoryBean(){
+    public LocalSessionFactoryBean hibernate5SessionFactoryBean() {
         LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
         localSessionFactoryBean.setDataSource(dataSource);
         localSessionFactoryBean.setAnnotatedClasses(
-               UserAccount.class
+                UserAccount.class
+
         );
+
 
         /** Porperties dla mysql. Wszystekie są zawarte w application.properties ale niech narazie bd bo nie wiem czy
          * na pewno są wszystkie
