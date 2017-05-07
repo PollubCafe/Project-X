@@ -54,6 +54,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	// google gson
 	compile('com.google.code.gson:gson:2.7')
+	// spring security
+	compile('org.springframework.security:spring-security-web:4.2.2.RELEASE')
+	compile('org.springframework.security:spring-security-config:4.2.2.RELEASE')
 
 	// spring dev tools
 	dev('org.springframework.boot:spring-boot-devtools')
