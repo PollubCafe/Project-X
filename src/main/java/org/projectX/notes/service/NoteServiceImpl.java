@@ -48,6 +48,7 @@ public class NoteServiceImpl implements NoteService {
             throw new NoResultException("No such note");
         }
         noteRepository.delete(note);
+
     }
 
 }

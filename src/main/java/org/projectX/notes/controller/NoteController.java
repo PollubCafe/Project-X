@@ -52,6 +52,11 @@ public class NoteController {
         NoteCore updatedNote = noteService.updateNote(noteCore);
         return new ResponseEntity<>(updatedNote, HttpStatus.OK);
     }
+    @RequestMapping(value="/delete",method = RequestMethod.DELETE,consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<NoteCore>> deleteNote(@RequestBody NoteCore noteCore){
+        noteService.deleteNote(noteCore);
+        return getNotes();
+    }
 
     @RequestMapping(value = "/createCategory", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     private Category getCategory(@RequestBody Category category) {
@@ -66,7 +71,5 @@ public class NoteController {
         List<Category> categories = categoryService.getAllCategories();
         return new ResponseEntity<>(categories, HttpStatus.OK);
     }
-
-
 
 }
